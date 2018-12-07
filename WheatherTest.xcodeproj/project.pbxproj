@@ -10,6 +10,9 @@
 		84A6EE9B21BB20D300EB2435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EE9A21BB20D300EB2435 /* AppDelegate.swift */; };
 		84A6EE9D21BB20D300EB2435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EE9C21BB20D300EB2435 /* ViewController.swift */; };
 		84A6EEA221BB20D600EB2435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A6EEA121BB20D600EB2435 /* Assets.xcassets */; };
+		84A6EEB321BB241B00EB2435 /* Wheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EEB221BB241B00EB2435 /* Wheather.swift */; };
+		84A6EED421BB263200EB2435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6EED321BB263200EB2435 /* LaunchScreen.storyboard */; };
+		84A6EED621BB27DE00EB2435 /* CurrentWheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EED521BB27DE00EB2435 /* CurrentWheather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,9 @@
 		84A6EE9C21BB20D300EB2435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84A6EEA121BB20D600EB2435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A6EEA621BB20D600EB2435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A6EEB221BB241B00EB2435 /* Wheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheather.swift; sourceTree = "<group>"; };
+		84A6EED321BB263200EB2435 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A6EED521BB27DE00EB2435 /* CurrentWheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWheather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		84A6EEAC21BB21A500EB2435 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				84A6EEB121BB240A00EB2435 /* Wheather */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -80,6 +87,7 @@
 		84A6EEAE21BB21BB00EB2435 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				84A6EED221BB262700EB2435 /* Resources */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -96,6 +104,23 @@
 			children = (
 			);
 			path = Platform;
+			sourceTree = "<group>";
+		};
+		84A6EEB121BB240A00EB2435 /* Wheather */ = {
+			isa = PBXGroup;
+			children = (
+				84A6EEB221BB241B00EB2435 /* Wheather.swift */,
+				84A6EED521BB27DE00EB2435 /* CurrentWheather.swift */,
+			);
+			path = Wheather;
+			sourceTree = "<group>";
+		};
+		84A6EED221BB262700EB2435 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84A6EED321BB263200EB2435 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A6EEA221BB20D600EB2435 /* Assets.xcassets in Resources */,
+				84A6EED421BB263200EB2435 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +194,8 @@
 			files = (
 				84A6EE9D21BB20D300EB2435 /* ViewController.swift in Sources */,
 				84A6EE9B21BB20D300EB2435 /* AppDelegate.swift in Sources */,
+				84A6EEB321BB241B00EB2435 /* Wheather.swift in Sources */,
+				84A6EED621BB27DE00EB2435 /* CurrentWheather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +322,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WheatherTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WheatherTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -311,7 +341,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WheatherTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,6 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WheatherTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
