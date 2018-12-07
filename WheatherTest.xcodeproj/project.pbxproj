@@ -13,6 +13,14 @@
 		84A6EEB321BB241B00EB2435 /* Wheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EEB221BB241B00EB2435 /* Wheather.swift */; };
 		84A6EED421BB263200EB2435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6EED321BB263200EB2435 /* LaunchScreen.storyboard */; };
 		84A6EED621BB27DE00EB2435 /* CurrentWheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EED521BB27DE00EB2435 /* CurrentWheather.swift */; };
+		84A6EEDA21BB355F00EB2435 /* FirstStepTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EED821BB355F00EB2435 /* FirstStepTutorialViewController.swift */; };
+		84A6EEDB21BB355F00EB2435 /* FirstStepTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6EED921BB355F00EB2435 /* FirstStepTutorialViewController.xib */; };
+		84A6EEDE21BB357700EB2435 /* SecondStepTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EEDC21BB357700EB2435 /* SecondStepTutorialViewController.swift */; };
+		84A6EEDF21BB357700EB2435 /* SecondStepTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6EEDD21BB357700EB2435 /* SecondStepTutorialViewController.xib */; };
+		84A6EEE421BB363300EB2435 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EEE221BB363300EB2435 /* LoadingViewController.swift */; };
+		84A6EEE521BB363300EB2435 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6EEE321BB363300EB2435 /* LoadingViewController.xib */; };
+		84A6EEE921BB364C00EB2435 /* WheatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6EEE721BB364C00EB2435 /* WheatherViewController.swift */; };
+		84A6EEEA21BB364C00EB2435 /* WheatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6EEE821BB364C00EB2435 /* WheatherViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		84A6EEB221BB241B00EB2435 /* Wheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheather.swift; sourceTree = "<group>"; };
 		84A6EED321BB263200EB2435 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84A6EED521BB27DE00EB2435 /* CurrentWheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWheather.swift; sourceTree = "<group>"; };
+		84A6EED821BB355F00EB2435 /* FirstStepTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepTutorialViewController.swift; sourceTree = "<group>"; };
+		84A6EED921BB355F00EB2435 /* FirstStepTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstStepTutorialViewController.xib; sourceTree = "<group>"; };
+		84A6EEDC21BB357700EB2435 /* SecondStepTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepTutorialViewController.swift; sourceTree = "<group>"; };
+		84A6EEDD21BB357700EB2435 /* SecondStepTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondStepTutorialViewController.xib; sourceTree = "<group>"; };
+		84A6EEE221BB363300EB2435 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		84A6EEE321BB363300EB2435 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		84A6EEE721BB364C00EB2435 /* WheatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherViewController.swift; sourceTree = "<group>"; };
+		84A6EEE821BB364C00EB2435 /* WheatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WheatherViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +103,7 @@
 		84A6EEAE21BB21BB00EB2435 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				84A6EED721BB297500EB2435 /* Sources */,
 				84A6EED221BB262700EB2435 /* Resources */,
 			);
 			path = Presentation;
@@ -121,6 +138,45 @@
 				84A6EED321BB263200EB2435 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		84A6EED721BB297500EB2435 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84A6EEE621BB363900EB2435 /* Wheather */,
+				84A6EEE121BB35AB00EB2435 /* Loading */,
+				84A6EEE021BB359500EB2435 /* Tutorial */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		84A6EEE021BB359500EB2435 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				84A6EED821BB355F00EB2435 /* FirstStepTutorialViewController.swift */,
+				84A6EED921BB355F00EB2435 /* FirstStepTutorialViewController.xib */,
+				84A6EEDC21BB357700EB2435 /* SecondStepTutorialViewController.swift */,
+				84A6EEDD21BB357700EB2435 /* SecondStepTutorialViewController.xib */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		84A6EEE121BB35AB00EB2435 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				84A6EEE221BB363300EB2435 /* LoadingViewController.swift */,
+				84A6EEE321BB363300EB2435 /* LoadingViewController.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		84A6EEE621BB363900EB2435 /* Wheather */ = {
+			isa = PBXGroup;
+			children = (
+				84A6EEE721BB364C00EB2435 /* WheatherViewController.swift */,
+				84A6EEE821BB364C00EB2435 /* WheatherViewController.xib */,
+			);
+			path = Wheather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6EEDF21BB357700EB2435 /* SecondStepTutorialViewController.xib in Resources */,
 				84A6EEA221BB20D600EB2435 /* Assets.xcassets in Resources */,
+				84A6EEDB21BB355F00EB2435 /* FirstStepTutorialViewController.xib in Resources */,
+				84A6EEE521BB363300EB2435 /* LoadingViewController.xib in Resources */,
+				84A6EEEA21BB364C00EB2435 /* WheatherViewController.xib in Resources */,
 				84A6EED421BB263200EB2435 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,9 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6EEE421BB363300EB2435 /* LoadingViewController.swift in Sources */,
 				84A6EE9D21BB20D300EB2435 /* ViewController.swift in Sources */,
 				84A6EE9B21BB20D300EB2435 /* AppDelegate.swift in Sources */,
+				84A6EEDE21BB357700EB2435 /* SecondStepTutorialViewController.swift in Sources */,
 				84A6EEB321BB241B00EB2435 /* Wheather.swift in Sources */,
+				84A6EEDA21BB355F00EB2435 /* FirstStepTutorialViewController.swift in Sources */,
+				84A6EEE921BB364C00EB2435 /* WheatherViewController.swift in Sources */,
 				84A6EED621BB27DE00EB2435 /* CurrentWheather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
