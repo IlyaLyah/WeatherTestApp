@@ -50,12 +50,52 @@
 		84A6EE9921BB20D200EB2435 /* WheatherTest */ = {
 			isa = PBXGroup;
 			children = (
+				84A6EEB021BB21FB00EB2435 /* Platform */,
+				84A6EEAF21BB21C300EB2435 /* Commons */,
+				84A6EEAE21BB21BB00EB2435 /* Presentation */,
+				84A6EEAD21BB21B000EB2435 /* Networking */,
+				84A6EEAC21BB21A500EB2435 /* Domain */,
 				84A6EE9A21BB20D300EB2435 /* AppDelegate.swift */,
 				84A6EE9C21BB20D300EB2435 /* ViewController.swift */,
 				84A6EEA121BB20D600EB2435 /* Assets.xcassets */,
 				84A6EEA621BB20D600EB2435 /* Info.plist */,
 			);
 			path = WheatherTest;
+			sourceTree = "<group>";
+		};
+		84A6EEAC21BB21A500EB2435 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		84A6EEAD21BB21B000EB2435 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		84A6EEAE21BB21BB00EB2435 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		84A6EEAF21BB21C300EB2435 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		84A6EEB021BB21FB00EB2435 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
