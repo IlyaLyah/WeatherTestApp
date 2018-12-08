@@ -188,6 +188,9 @@
 		84A6EE8F21BB20D200EB2435 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					uiview,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				TargetAttributes = {
