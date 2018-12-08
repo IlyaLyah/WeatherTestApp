@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Wheather {
+public struct Weather {
     public let temperature: Double
     public let pressure: Double
     public let humidity: Double

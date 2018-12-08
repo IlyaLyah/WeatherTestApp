@@ -11,13 +11,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
 
-        let homeViewController: UIViewController
-        if CLLocationManager.locationServicesEnabled() {
-            homeViewController = FirstStepTutorialViewController(locationManager: self.locationManager)
+        let viewController: UIViewController
+        if CLLocationManager.authorizationStatus() != .restricted || CLLocationManager.authorizationStatus() != .denied {
+            viewController = FirstStepTutorialViewController(locationManager: self.locationManager)
         } else {
-            homeViewController = WheatherViewController(locationManager: self.locationManager)
+            viewController = WheatherViewController(
+                locationManager: self.locationManager,
+                currentWeather: CurrentWeatherApi()
+            )
         }
-        let navigtionController = UINavigationController(rootViewController: homeViewController)
+        let navigtionController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navigtionController
         window?.makeKeyAndVisible()
 

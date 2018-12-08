@@ -23,14 +23,20 @@ class FirstStepTutorialViewController: UIViewController {
         super.viewDidLoad()
         self.setupView()
         self.locationManager.delegate = self
-        if !CLLocationManager.locationServicesEnabled() {
+
+        switch CLLocationManager.authorizationStatus() {
+        case .authorizedAlways, .authorizedWhenInUse:
+            self.nextButton.isHidden = false
+        case .restricted, .denied:
+            self.textLabel.text = "Plesae accept location permission in settings"
+        case .notDetermined:
             self.locationManager.requestWhenInUseAuthorization()
         }
     }
 
     private func setupView() {
         self.textLabel.text = "Please grand your permission"
-        self.nextButton.isHidden = !CLLocationManager.locationServicesEnabled()
+        self.nextButton.isHidden = true
     }
 
     @IBAction func nextButtonTapped(_ sender: Any) {
@@ -42,5 +48,8 @@ class FirstStepTutorialViewController: UIViewController {
 extension FirstStepTutorialViewController: CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.nextButton.isHidden = status != .authorizedWhenInUse
+        if status == .restricted ||  status == .denied {
+            self.textLabel.text = "Plesae accept location permission in settings"
+        }
     }
 }

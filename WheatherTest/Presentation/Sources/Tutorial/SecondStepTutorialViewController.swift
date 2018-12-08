@@ -21,6 +21,7 @@ class SecondStepTutorialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
+        self.locationManager.startUpdatingLocation()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,10 @@ class SecondStepTutorialViewController: UIViewController {
     }
 
     @IBAction func okButtonTapped(_ sender: Any) {
-        let weatherViewController = WheatherViewController(locationManager: self.locationManager)
+        let weatherViewController = WheatherViewController(
+            locationManager: self.locationManager,
+            currentWeather: CurrentWeatherApi()
+        )
         self.navigationController?.show(weatherViewController, sender: nil)
     }
 }
